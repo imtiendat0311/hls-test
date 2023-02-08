@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css"/>
+    <script src="https://cdn.plyr.io/3.7.3/plyr.js"></script>
+    <link rel="stylesheet" href="./style/style.css"/>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Testing</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1> Testing </h1>
+        <div class="groupbutton">
+            <button onclick='changeSource("http://media.developer.dolby.com/DolbyVision_Atmos/profile5_HLS/master.m3u8")'><img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Dolby_Vision_2021_logo.svg" width="50px" class="fill_black"/><span style="font-family: AvenirNext; font-size: larger;"> &nbsp; 1</span></button>
+            <button onclick='changeSource("https://ott.dolby.com/User/jxyu/PlayerTestSignal/HLS/Manifest/Holi_25fps_aac_dovi_1.m3u8")'><img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Dolby_Vision_2021_logo.svg" width="50px" class="fill_black"/> <span style="font-family: AvenirNext;  font-size: larger;"> &nbsp; 2</span></button>
+            <button onclick='changeSource("https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8")'><span style="font-family: AvenirNext;  font-size: larger;">Other</span></button>
+        </div>
+        
+    </header>
+    <main>
+        <div class="player">
+            <video controls crossorigin playsinline></video>
+        </div>
+                
+        
+    </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+    <script src="index.js"></script>
+</body>
+</html>

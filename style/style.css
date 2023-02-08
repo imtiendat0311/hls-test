@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: AvenirNext;
+    src: url(/font/AvenirNext-DemiBold.woff);
+}
+@font-face {
+    font-family: AvenirNextLT;
+    src: url(/font/AvenirNextLTPro-Medium.woff);
+}
+body{
+    padding: 10%;
+    font-family: AvenirNextLT;
+    background-color: #13141c;
+}
+h1{
+    font-family: AvenirNext;
+    color:white;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex:1 ;
+    overflow: auto;
+}
+header{
+    flex: 1 30px;
+    text-align: center;
+}
+main{
+    margin-top: 30px;
+    flex: 3;
+}
+.player{
+  min-width: 100%;
+  border-radius: 10px;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  overflow: hidden;
+  z-index: 1;
+}
+video{
+    max-width: 100%;
+}
+.groupbutton{
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    display: flex;
+    align-content: baseline;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: #3e44fe;
+    color: white;
+}
+button:hover{
+    border: solid 2px;
+    border-color: #ae3fff;
+    background-color: #fff;
+    color: #13141c;
+}
+button:hover .fill_black{
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);
+
+}
+.fill_black{
+    filter: invert(91%) sepia(0%) saturate(7464%) hue-rotate(37deg) brightness(115%) contrast(108%);
+}
